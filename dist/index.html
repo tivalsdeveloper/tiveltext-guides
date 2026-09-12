@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Free, practical programming guides from tivalsdeveloper. Enter your email and receive your PDF securely.">
+  <meta name="theme-color" content="#071612">
+  <title>TivelText Guides — Learn by building</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23071612'/%3E%3Cpath d='M17 21h30v8H36v24h-8V29H17z' fill='%236cf7bd'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="TivelText home"><span class="brand-mark">T</span><span>TivelText</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#guides">Guides</a>
+      <a href="https://pypi.org/project/tiveltext/" target="_blank" rel="noopener">Python library</a>
+      <a class="github-link" href="https://github.com/tivalsdeveloper-oss/tiveltext" target="_blank" rel="noopener">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Free learning library</p>
+        <h1>Learn the code.<br><em>Build the thing.</em></h1>
+        <p class="intro">Practical, visual programming guides made for learners using everyday computers. No expensive hardware. No unnecessary theory.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#guides">Browse free guides <span>↓</span></a>
+          <span class="microcopy">PDF · Mobile friendly · Free</span>
+        </div>
+      </div>
+      <div class="code-card" aria-label="TivelText code example">
+        <div class="terminal-bar"><span></span><span></span><span></span><small>quick_start.py</small></div>
+        <pre><code><b>from</b> tiveltext <b>import</b> box
+
+lesson = <i>"Start small.\nKeep building."</i>
+
+print(box(lesson, style=<i>"double"</i>))
+
+<span>╔════════════════╗</span>
+<span>║ Start small.   ║</span>
+<span>║ Keep building. ║</span>
+<span>╚════════════════╝</span></code></pre>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+      </div>
+    </section>
+
+    <section class="trust-row" aria-label="Guide benefits">
+      <div><strong>02</strong><span>complete PDF courses</span></div>
+      <div><strong>55</strong><span>step-by-step lessons</span></div>
+      <div><strong>CPU</strong><span>friendly examples</span></div>
+      <div><strong>R0</strong><span>always free</span></div>
+    </section>
+
+    <section class="library" id="guides">
+      <div class="section-heading">
+        <div><p class="eyebrow"><span></span> Choose your next skill</p><h2>The guide shelf</h2></div>
+        <p>Pick a course, enter your email once, and we’ll send the PDF directly to your inbox.</p>
+      </div>
+
+      <div class="guide-grid">
+        <article class="guide-card" data-guide="pytorch" data-file="guides/learn-pytorch-on-cpu-30-lessons.pdf" data-title="PyTorch on CPU — 30 Lessons">
+          <div class="guide-top">
+            <span class="course-number">01</span><span class="pill">Machine learning</span>
+          </div>
+          <div class="book-icon torch" aria-hidden="true"><span>torch</span><b>30</b></div>
+          <h3>PyTorch on CPU</h3>
+          <p>From tensors to a complete training loop, designed for Debian laptops without a GPU.</p>
+          <ul><li>30 visual lessons</li><li>Beginner to model training</li><li>Low-memory examples</li></ul>
+          <button class="download-trigger" type="button">Send me this PDF <span>→</span></button>
+        </article>
+
+        <article class="guide-card accent-card" data-guide="pytest" data-file="guides/learn-pytest-beginner-to-advanced.pdf" data-title="pytest — Beginner to Advanced">
+          <div class="guide-top">
+            <span class="course-number">02</span><span class="pill">Python testing</span>
+          </div>
+          <div class="book-icon pytest" aria-hidden="true"><span>pytest</span><b>25</b></div>
+          <h3>pytest: Beginner to Advanced</h3>
+          <p>Learn to write reliable tests, organise test suites, use fixtures, and debug failures.</p>
+          <ul><li>25 visual lessons</li><li>Real Python examples</li><li>Practice exercises</li></ul>
+          <button class="download-trigger" type="button">Send me this PDF <span>→</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="steps">
+      <p class="eyebrow"><span></span> Simple and secure</p>
+      <h2>One email. One useful guide.</h2>
+      <div class="step-grid">
+        <div><b>1</b><h3>Choose a course</h3><p>Select the guide that matches what you want to learn.</p></div>
+        <div><b>2</b><h3>Enter your email</h3><p>We use it to deliver the PDF and occasional guide updates.</p></div>
+        <div><b>3</b><h3>Open your PDF</h3><p>Use the secure email link or the backup download button.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="brand"><span class="brand-mark">T</span><span>TivelText</span></div><p>Free tools and guides for people who learn by building.</p><small>© 2026 · Powered by <strong>tivalsdeveloper</strong></small></footer>
+
+  <dialog id="email-dialog" aria-labelledby="dialog-title">
+    <button class="close" type="button" aria-label="Close dialog">×</button>
+    <div id="form-view">
+      <span class="dialog-icon">@</span>
+      <p class="eyebrow">One quick step</p>
+      <h2 id="dialog-title">Where should we send it?</h2>
+      <p class="dialog-copy">Enter your email and we’ll send <strong id="selected-guide">your guide</strong> as a PDF attachment with a secure download link.</p>
+      <form id="email-form">
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required maxlength="254">
+        <button id="submit-email" type="submit">Send my download <span>→</span></button>
+        <p id="form-message" role="status" aria-live="polite"></p>
+      </form>
+      <small class="privacy">No spam. Your email is stored securely for guide updates. You can unsubscribe at any time.</small>
+    </div>
+    <div id="success-view" hidden>
+      <span class="success-icon">✓</span>
+      <p class="eyebrow">Email sent</p>
+      <h2>Check your inbox.</h2>
+      <p class="dialog-copy">Your PDF is on its way. If it doesn’t appear in a few minutes, check Spam or use the backup below.</p>
+      <a id="backup-download" class="primary backup" href="#" download>Download PDF now <span>↓</span></a>
+      <button class="text-button" id="choose-another" type="button">Choose another guide</button>
+    </div>
+  </dialog>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
